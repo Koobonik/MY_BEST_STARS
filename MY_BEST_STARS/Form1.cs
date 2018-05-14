@@ -17,7 +17,7 @@ namespace MY_BEST_STARS
             InitializeComponent();
         }
 
-        private void register_Click(object sender, EventArgs e)//등록버튼
+        public void register_Click(object sender, EventArgs e)//등록버튼
         {
             User user = new User(namebox.Text);//name박스의 텍스트를 불러와서 이름을 넣어줌
             this.Visible = false;//창닫고
