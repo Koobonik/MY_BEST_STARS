@@ -1,0 +1,12 @@
+c:\users\diat\documents\visual studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\MY_BEST_STARS.exe.config
+c:\users\diat\documents\visual studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.csprojResolveAssemblyReference.cache
+c:\users\diat\documents\visual studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.UserRegister.resources
+c:\users\diat\documents\visual studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.Properties.Resources.resources
+c:\users\diat\documents\visual studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.csproj.GenerateResource.Cache
+C:\Users\diat\Documents\Visual Studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\MY_BEST_STARS.exe
+C:\Users\diat\Documents\Visual Studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\MY_BEST_STARS.pdb
+C:\Users\diat\Documents\Visual Studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.exe
+C:\Users\diat\Documents\Visual Studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.pdb
+C:\Users\diat\Documents\Visual Studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.MainGUI.resources
+C:\Users\diat\Documents\Visual Studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.editGUI.resources
+C:\Users\diat\Documents\Visual Studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.PlusWeb.resources
