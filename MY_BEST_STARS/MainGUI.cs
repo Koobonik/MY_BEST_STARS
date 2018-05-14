@@ -24,7 +24,7 @@ namespace MY_BEST_STARS
 
         private void close_Click(object sender, EventArgs e)
         {
-            Visible = false;
+            Visible = false;//닫힘 버튼
         }
     }
 }

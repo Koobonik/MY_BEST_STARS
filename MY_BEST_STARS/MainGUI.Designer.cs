@@ -73,7 +73,7 @@
             this.Controls.Add(this.edit);
             this.Controls.Add(this.label1);
             this.Name = "MainGUI";
-            this.Text = "MainGUI";
+            this.Text = "메인 화면";
             this.ResumeLayout(false);
             this.PerformLayout();
 
