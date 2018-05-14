@@ -16,5 +16,25 @@ namespace MY_BEST_STARS
         {
             InitializeComponent();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Web_Enter_Click(object sender, EventArgs e)
+        {
+            /*
+            User user = new User(namebox.Text);//name박스의 텍스트를 불러와서 이름을 넣어줌
+            this.Visible = false;//창닫고
+            MainGUI form2 = new MainGUI();//나만의 만능찾기라는 창을 만듦
+            form2.ShowDialog();//그 창을 띄움
+            */
+        }
     }
 }

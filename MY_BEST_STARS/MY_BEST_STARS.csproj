@@ -64,6 +64,7 @@
     <Compile Include="MainGUI.Designer.cs">
       <DependentUpon>MainGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="MakeWeb.cs" />
     <Compile Include="PlusWeb.cs">
       <SubType>Form</SubType>
     </Compile>

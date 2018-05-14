@@ -40,6 +40,7 @@
             this.PlusWebButton.TabIndex = 0;
             this.PlusWebButton.Text = "웹 추가";
             this.PlusWebButton.UseVisualStyleBackColor = true;
+            this.PlusWebButton.Click += new System.EventHandler(this.PlusWebButton_Click);
             // 
             // Board
             // 

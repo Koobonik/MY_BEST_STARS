@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.edit = new System.Windows.Forms.Button();
             this.close = new System.Windows.Forms.Button();
+            this.openweb = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -64,11 +65,22 @@
             this.close.UseVisualStyleBackColor = true;
             this.close.Click += new System.EventHandler(this.close_Click);
             // 
+            // openweb
+            // 
+            this.openweb.Location = new System.Drawing.Point(263, 87);
+            this.openweb.Name = "openweb";
+            this.openweb.Size = new System.Drawing.Size(75, 23);
+            this.openweb.TabIndex = 3;
+            this.openweb.Text = "웹사이트 열기";
+            this.openweb.UseVisualStyleBackColor = true;
+            this.openweb.Click += new System.EventHandler(this.openweb_Click);
+            // 
             // MainGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(679, 347);
+            this.Controls.Add(this.openweb);
             this.Controls.Add(this.close);
             this.Controls.Add(this.edit);
             this.Controls.Add(this.label1);
@@ -84,5 +96,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button edit;
         private System.Windows.Forms.Button close;
+        private System.Windows.Forms.Button openweb;
     }
 }
