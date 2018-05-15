@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="buttonmake.cs" />
     <Compile Include="editGUI.cs">
       <SubType>Form</SubType>
     </Compile>
