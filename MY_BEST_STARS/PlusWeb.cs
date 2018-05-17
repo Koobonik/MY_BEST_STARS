@@ -30,15 +30,13 @@ namespace MY_BEST_STARS
             User user = new User(namebox.Text);//name박스의 텍스트를 불러와서 이름을 넣어줌
             */
             int i = 1;
-            MakeWeb makeweb = new MakeWeb(textBox1.Text, textBox2.Text);//이름과 주소를 받아와서 웹을 만듦
-
 
             while (true)
             {
                 Button btn = new Button();
-                btn.Size = new Size(i*40, 30);
-                btn.Name = "btn" + i;
-
+                btn.Size = new Size(i * 40, 30);
+                btn.Name = textBox1.Text;//이름은 텍스트 박스 1 에서 가져옴
+                MakeWeb makeweb = new MakeWeb(textBox1.Text, textBox2.Text);//이름과 주소를 받아와서 웹을 만듦
                 btn.Text = btn.Name;
                 btn.Location = new Point(10 + i * (80 + 5), 50);
                 MainGUI form2 = new MainGUI();
