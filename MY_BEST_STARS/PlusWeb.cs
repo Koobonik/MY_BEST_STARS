@@ -37,6 +37,7 @@ namespace MY_BEST_STARS
                 btn.Size = new Size(i * 40, 30);
                 btn.Name = textBox1.Text;//이름은 텍스트 박스 1 에서 가져옴
                 MakeWeb makeweb = new MakeWeb(textBox1.Text, textBox2.Text);//이름과 주소를 받아와서 웹을 만듦
+                /* 집가서 이 위 코드 MakeWeb 클래스에 밑에 소스들 넣어서 관리하자! */
                 btn.Text = btn.Name;
                 btn.Location = new Point(10 + i * (80 + 5), 50);
                 MainGUI form2 = new MainGUI();
