@@ -34,10 +34,15 @@ namespace MY_BEST_STARS
         }
         private void makeButton()
         {
-            Button button = new System.Windows.Forms.Button();
-            
+            Button button = new Button();
+            button.Click += new EventHandler(button_Click);
+        }
+        protected void button_Click(object sender, EventArgs e)//동적 버튼 만들기
+        {
+            Button button = sender as Button;
         }
 
-
     }
+
+
 }
