@@ -31,6 +31,7 @@ namespace MY_BEST_STARS
             {
                 MessageBox.Show(other.Message);
             }
+
         }
         private void makeButton()
         {
