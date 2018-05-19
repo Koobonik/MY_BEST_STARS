@@ -16,11 +16,11 @@ namespace MY_BEST_STARS
         {
             InitializeComponent();
         }
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)//이름칸
         {
-
+            
         }
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)//주소칸
         {
 
         }
@@ -29,24 +29,42 @@ namespace MY_BEST_STARS
             /*
             User user = new User(namebox.Text);//name박스의 텍스트를 불러와서 이름을 넣어줌
             */
+            MakeWeb makeweb = new MakeWeb(textBox1.Text, textBox2.Text);//이름과 주소를 받아와서 웹을 만듦
             int i = 1;
-
             while (true)
             {
-                Button btn = new Button();
-                btn.Size = new Size(i * 40, 30);
-                btn.Name = textBox1.Text;//이름은 텍스트 박스 1 에서 가져옴
-                MakeWeb makeweb = new MakeWeb(textBox1.Text, textBox2.Text);//이름과 주소를 받아와서 웹을 만듦
-                /* 집가서 이 위 코드 MakeWeb 클래스에 밑에 소스들 넣어서 관리하자! */
-                btn.Text = btn.Name;
-                btn.Location = new Point(10 + i * (80 + 5), 50);
+                
+                Button btn = new Button();//버튼 객체생성
+                btn.Size = new Size(40, 30);//버튼 사이즈
+                btn.Text = textBox1.Text;//이름은 텍스트 박스 1 에서 가져옴
+                btn.Click += new EventHandler(btn_Click);//버튼 클릭 기능추가
+                btn.Location = new Point(10 + i * (80 + 5), 50);//버튼의 위치
+                btn.Visible = true;
                 MainGUI form2 = new MainGUI();
                 form2.Controls.Add(btn);
                 ++i;
-                btn.Visible = true;
                 this.Visible = false;//창닫고
                 form2.ShowDialog();//그 창을 띄움
                 break;
+            }
+        }
+        public void btn_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            try
+            {
+                System.Diagnostics.Process.Start(textBox2.Text);//링크
+            }
+            catch
+                (
+                 System.ComponentModel.Win32Exception noBrowser)
+            {
+                if (noBrowser.ErrorCode == -2147467259)
+                    MessageBox.Show(noBrowser.Message);
+            }
+            catch (System.Exception other)
+            {
+                MessageBox.Show(other.Message);
             }
         }
 

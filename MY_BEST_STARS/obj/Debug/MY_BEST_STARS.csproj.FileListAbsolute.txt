@@ -10,3 +10,16 @@ C:\Users\diat\Documents\Visual Studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\
 C:\Users\diat\Documents\Visual Studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.MainGUI.resources
 C:\Users\diat\Documents\Visual Studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.editGUI.resources
 C:\Users\diat\Documents\Visual Studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.PlusWeb.resources
+C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\MY_BEST_STARS.exe.config
+C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\MY_BEST_STARS.exe
+C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\MY_BEST_STARS.pdb
+C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.csprojResolveAssemblyReference.cache
+C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.editGUI.resources
+C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.UserRegister.resources
+C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.MainGUI.resources
+C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.PlusWeb.resources
+C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.Properties.Resources.resources
+C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.csproj.GenerateResource.cache
+C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.csproj.CoreCompileInputs.cache
+C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.exe
+C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.pdb

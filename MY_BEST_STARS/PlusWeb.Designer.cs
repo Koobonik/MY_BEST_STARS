@@ -38,9 +38,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(103, 62);
+            this.textBox1.Location = new System.Drawing.Point(103, 27);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 21);
+            this.textBox1.Size = new System.Drawing.Size(125, 21);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -64,9 +64,9 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(103, 33);
+            this.textBox2.Location = new System.Drawing.Point(103, 56);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 21);
+            this.textBox2.Size = new System.Drawing.Size(207, 21);
             this.textBox2.TabIndex = 3;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
