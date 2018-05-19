@@ -26,19 +26,15 @@ namespace MY_BEST_STARS
         }
         private void Web_Enter_Click(object sender, EventArgs e)//웹 등록 버튼
         {
-            /*
-            User user = new User(namebox.Text);//name박스의 텍스트를 불러와서 이름을 넣어줌
-            */
-            MakeWeb makeweb = new MakeWeb(textBox1.Text, textBox2.Text);//이름과 주소를 받아와서 웹을 만듦
             int i = 1;
             while (true)
             {
-                
+
                 Button btn = new Button();//버튼 객체생성
-                btn.Size = new Size(40, 30);//버튼 사이즈
+                btn.Size = new Size(80, 30);//버튼 사이즈
                 btn.Text = textBox1.Text;//이름은 텍스트 박스 1 에서 가져옴
                 btn.Click += new EventHandler(btn_Click);//버튼 클릭 기능추가
-                btn.Location = new Point(10 + i * (80 + 5), 50);//버튼의 위치
+                btn.Location = new Point(10 + i * 100, 50);//버튼의 위치 ( 가로, 세로 )
                 btn.Visible = true;
                 MainGUI form2 = new MainGUI();
                 form2.Controls.Add(btn);
