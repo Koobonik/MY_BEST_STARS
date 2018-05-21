@@ -36,8 +36,8 @@ namespace MY_BEST_STARS
                 btn.Click += new EventHandler(btn_Click);//버튼 클릭 기능추가
                 btn.Location = new Point(10 + i * 100, 50);//버튼의 위치 ( 가로, 세로 )
                 btn.Visible = true;
-                MainGUI form2 = new MainGUI();
-                form2.Controls.Add(btn);
+                MainGUI form2 = new MainGUI();//MainGUI로 폼을 만들고
+                form2.Controls.Add(btn);//form2 에 버튼을 추가한다.
                 ++i;
                 this.Visible = false;//창닫고
                 form2.ShowDialog();//그 창을 띄움
