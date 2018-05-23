@@ -23,5 +23,15 @@ namespace MY_BEST_STARS
             PlusWeb plusweb = new PlusWeb();//나만의 만능찾기라는 창을 만듦
             plusweb.ShowDialog();//그 창을 띄움
         }
+
+        private void Board_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void application_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.PlusWebButton = new System.Windows.Forms.Button();
             this.Board = new System.Windows.Forms.Button();
+            this.application = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PlusWebButton
@@ -50,12 +51,24 @@
             this.Board.TabIndex = 1;
             this.Board.Text = "게시판 추가";
             this.Board.UseVisualStyleBackColor = true;
+            this.Board.Click += new System.EventHandler(this.Board_Click);
+            // 
+            // application
+            // 
+            this.application.Location = new System.Drawing.Point(240, 32);
+            this.application.Name = "application";
+            this.application.Size = new System.Drawing.Size(91, 23);
+            this.application.TabIndex = 2;
+            this.application.Text = "응용프로그램";
+            this.application.UseVisualStyleBackColor = true;
+            this.application.Click += new System.EventHandler(this.application_Click);
             // 
             // editGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(535, 304);
+            this.Controls.Add(this.application);
             this.Controls.Add(this.Board);
             this.Controls.Add(this.PlusWebButton);
             this.Name = "editGUI";
@@ -68,5 +81,6 @@
 
         private System.Windows.Forms.Button PlusWebButton;
         private System.Windows.Forms.Button Board;
+        private System.Windows.Forms.Button application;
     }
 }
