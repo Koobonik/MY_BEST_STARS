@@ -38,11 +38,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 18F);
-            this.label1.Location = new System.Drawing.Point(278, 9);
+            this.label1.Location = new System.Drawing.Point(220, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 24);
+            this.label1.Size = new System.Drawing.Size(186, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "즐겨찾기";
+            this.label1.Text = "보닉스 즐겨찾기";
             // 
             // edit
             // 
@@ -67,11 +67,11 @@
             // 
             // openweb
             // 
-            this.openweb.Location = new System.Drawing.Point(263, 87);
+            this.openweb.Location = new System.Drawing.Point(12, 41);
             this.openweb.Name = "openweb";
-            this.openweb.Size = new System.Drawing.Size(75, 23);
+            this.openweb.Size = new System.Drawing.Size(92, 23);
             this.openweb.TabIndex = 3;
-            this.openweb.Text = "웹사이트 열기";
+            this.openweb.Text = "웹서핑 모드";
             this.openweb.UseVisualStyleBackColor = true;
             this.openweb.Click += new System.EventHandler(this.openweb_Click);
             // 

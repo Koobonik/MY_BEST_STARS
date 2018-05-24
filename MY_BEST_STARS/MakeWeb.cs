@@ -12,35 +12,30 @@ namespace MY_BEST_STARS
 {
     class MakeWeb
     {
-        String Name, Url;//이름과 url
-        public MakeWeb(String name, String url)
+        public MakeWeb()
         {
+           
+        }
 
+        public void Web_surfing_Mode()//웹서핑 모드
+        {
             try
             {
-                System.Diagnostics.Process.Start(url);
+                System.Diagnostics.Process.Start("https://www.naver.com");//네이버
+                System.Diagnostics.Process.Start("http://www.coolenjoy.net");//쿨엔조이
+                System.Diagnostics.Process.Start("https://okky.kr");//오키 커뮤니티
             }
             catch
                 (
                  System.ComponentModel.Win32Exception noBrowser)
             {
                 if (noBrowser.ErrorCode == -2147467259)
-                    MessageBox.Show(noBrowser.Message);
+                    MessageBox.Show(noBrowser.Message);//브라우저가 없을때 출력되는 메시지
             }
             catch (System.Exception other)
             {
                 MessageBox.Show(other.Message);
             }
-
-        }
-        private void makeButton()
-        {
-            Button button = new Button();
-            button.Click += new EventHandler(button_Click);
-        }
-        protected void button_Click(object sender, EventArgs e)//동적 버튼 만들기
-        {
-            Button button = sender as Button;
         }
 
     }

@@ -31,21 +31,7 @@ namespace MY_BEST_STARS
 
         private void openweb_Click(object sender, EventArgs e)//웹페이지 여는 기본 틀 마련
         {
-            try
-            {
-                System.Diagnostics.Process.Start("https://www.naver.com/");
-            }
-            catch
-                (
-                 System.ComponentModel.Win32Exception noBrowser)
-            {
-                if (noBrowser.ErrorCode == -2147467259)
-                    MessageBox.Show(noBrowser.Message);
-            }
-            catch (System.Exception other)
-            {
-                MessageBox.Show(other.Message);
-            }
+            MakeWeb web = new MakeWeb();
 
         }
         

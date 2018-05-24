@@ -29,3 +29,4 @@ C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\Microsoft.Visu
 C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\ko\Microsoft.Data.Tools.Schema.Sql.UnitTesting.resources.dll
 C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\ko\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
 C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.csproj.CopyComplete
+C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.application.resources
