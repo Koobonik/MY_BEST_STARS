@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="application.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="application.Designer.cs">
+      <DependentUpon>application.cs</DependentUpon>
+    </Compile>
     <Compile Include="buttonmake.cs" />
     <Compile Include="editGUI.cs">
       <SubType>Form</SubType>
@@ -84,6 +90,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="application.resx">
+      <DependentUpon>application.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="editGUI.resx">
       <DependentUpon>editGUI.cs</DependentUpon>
     </EmbeddedResource>

@@ -31,47 +31,37 @@ namespace MY_BEST_STARS
         private void InitializeComponent()
         {
             this.name = new System.Windows.Forms.Label();
-            this.namebox = new System.Windows.Forms.TextBox();
-            this.register = new System.Windows.Forms.Button();
+            this.start = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // name
             // 
             this.name.AutoSize = true;
-            this.name.Location = new System.Drawing.Point(12, 12);
+            this.name.Location = new System.Drawing.Point(21, 9);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(29, 12);
+            this.name.Size = new System.Drawing.Size(229, 12);
             this.name.TabIndex = 0;
-            this.name.Text = "이름";
+            this.name.Text = "나만의 즐겨찾기에 오신 것을 환영합니다!";
             // 
-            // namebox
+            // start
             // 
-            this.namebox.Location = new System.Drawing.Point(48, 9);
-            this.namebox.Name = "namebox";
-            this.namebox.Size = new System.Drawing.Size(100, 21);
-            this.namebox.TabIndex = 1;
-            namebox.TextChanged += new System.EventHandler(this.namebox_TextChanged);
-            // 
-            // register
-            // 
-            this.register.Location = new System.Drawing.Point(154, 9);
-            this.register.Name = "register";
-            this.register.Size = new System.Drawing.Size(75, 23);
-            this.register.TabIndex = 2;
-            this.register.Text = "등록";
-            this.register.UseVisualStyleBackColor = true;
-            this.register.Click += new System.EventHandler(this.register_Click);
+            this.start.Location = new System.Drawing.Point(92, 30);
+            this.start.Name = "start";
+            this.start.Size = new System.Drawing.Size(75, 23);
+            this.start.TabIndex = 2;
+            this.start.Text = "시작";
+            this.start.UseVisualStyleBackColor = true;
+            this.start.Click += new System.EventHandler(this.register_Click);
             // 
             // UserRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(242, 38);
-            this.Controls.Add(this.register);
-            this.Controls.Add(this.namebox);
+            this.ClientSize = new System.Drawing.Size(260, 65);
+            this.Controls.Add(this.start);
             this.Controls.Add(this.name);
             this.Name = "UserRegister";
-            this.Text = "사용자 등록";
+            this.Text = "인사말";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -85,8 +75,7 @@ namespace MY_BEST_STARS
         #endregion
 
         private System.Windows.Forms.Label name;
-        private System.Windows.Forms.TextBox namebox;
-        private System.Windows.Forms.Button register;
+        private System.Windows.Forms.Button start;
     }
 }
 

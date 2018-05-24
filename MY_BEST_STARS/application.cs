@@ -21,7 +21,7 @@ namespace MY_BEST_STARS
 
         private void cal_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("C:\Windows\System32\cale.exe");
+            System.Diagnostics.Process.Start("C:/Windows/System32/cale.exe");
         }
     }
 }
