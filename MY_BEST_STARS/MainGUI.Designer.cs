@@ -194,7 +194,7 @@ namespace MY_BEST_STARS
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainGUI";
             this.Text = "메인 화면";
-            this.Resize += new System.EventHandler(this.MainGUI_Resize);
+            this.Resize += new System.EventHandler(this.edit_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
