@@ -14,7 +14,10 @@ namespace MY_BEST_STARS
     {
         public UserRegister()
         {
-            InitializeComponent();
+            //InitializeComponent();  //바로 메인 화면 뜨게끔 수정
+            this.Visible = false;//창닫고
+            MainGUI form2 = new MainGUI();//나만의 만능찾기라는 창을 만듦
+            form2.ShowDialog();//그 창을 띄움
         }
 
         public void register_Click(object sender, EventArgs e)//등록버튼

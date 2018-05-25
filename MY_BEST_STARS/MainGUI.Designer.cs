@@ -31,7 +31,7 @@ namespace MY_BEST_STARS
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainGUI));
             this.label1 = new System.Windows.Forms.Label();
             this.edit = new System.Windows.Forms.Button();
             this.close = new System.Windows.Forms.Button();
@@ -44,11 +44,6 @@ namespace MY_BEST_STARS
             this.Weather = new System.Windows.Forms.Button();
             this.Fine_Dust = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.열기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.종료ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -179,31 +174,6 @@ namespace MY_BEST_STARS
             this.label3.TabIndex = 12;
             this.label3.Text = "추가 웹";
             // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
-            // 
-            // 열기ToolStripMenuItem
-            // 
-            this.열기ToolStripMenuItem.Name = "열기ToolStripMenuItem";
-            this.열기ToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
-            this.열기ToolStripMenuItem.Text = "열기";
-            // 
-            // 종료ToolStripMenuItem
-            // 
-            this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
-            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
-            this.종료ToolStripMenuItem.Text = "종료";
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.열기ToolStripMenuItem,
-            this.종료ToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(99, 48);
-            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
-            // 
             // MainGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -221,10 +191,10 @@ namespace MY_BEST_STARS
             this.Controls.Add(this.close);
             this.Controls.Add(this.edit);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainGUI";
             this.Text = "메인 화면";
             this.Resize += new System.EventHandler(this.MainGUI_Resize);
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,9 +219,5 @@ namespace MY_BEST_STARS
         private System.Windows.Forms.Button Weather;
         private System.Windows.Forms.Button Fine_Dust;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NotifyIcon notifyIcon1;
-        private System.Windows.Forms.ToolStripMenuItem 열기ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 종료ToolStripMenuItem;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
