@@ -29,13 +29,12 @@
         private void InitializeComponent()
         {
             this.PlusWebButton = new System.Windows.Forms.Button();
-            this.Board = new System.Windows.Forms.Button();
             this.application = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PlusWebButton
             // 
-            this.PlusWebButton.Location = new System.Drawing.Point(39, 33);
+            this.PlusWebButton.Location = new System.Drawing.Point(12, 12);
             this.PlusWebButton.Name = "PlusWebButton";
             this.PlusWebButton.Size = new System.Drawing.Size(75, 23);
             this.PlusWebButton.TabIndex = 0;
@@ -43,19 +42,9 @@
             this.PlusWebButton.UseVisualStyleBackColor = true;
             this.PlusWebButton.Click += new System.EventHandler(this.PlusWebButton_Click);
             // 
-            // Board
-            // 
-            this.Board.Location = new System.Drawing.Point(135, 33);
-            this.Board.Name = "Board";
-            this.Board.Size = new System.Drawing.Size(84, 23);
-            this.Board.TabIndex = 1;
-            this.Board.Text = "게시판 추가";
-            this.Board.UseVisualStyleBackColor = true;
-            this.Board.Click += new System.EventHandler(this.Board_Click);
-            // 
             // application
             // 
-            this.application.Location = new System.Drawing.Point(240, 32);
+            this.application.Location = new System.Drawing.Point(93, 12);
             this.application.Name = "application";
             this.application.Size = new System.Drawing.Size(91, 23);
             this.application.TabIndex = 2;
@@ -67,9 +56,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 304);
+            this.ClientSize = new System.Drawing.Size(196, 43);
             this.Controls.Add(this.application);
-            this.Controls.Add(this.Board);
             this.Controls.Add(this.PlusWebButton);
             this.Name = "editGUI";
             this.Text = "편집";
@@ -80,7 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Button PlusWebButton;
-        private System.Windows.Forms.Button Board;
         private System.Windows.Forms.Button application;
     }
 }
