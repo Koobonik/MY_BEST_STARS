@@ -12,9 +12,10 @@ namespace MY_BEST_STARS
 {
     public partial class PlusWeb : Form
     {
-        Button btn = new Button();//버튼 객체생성
+        Button btn = new Button();//배열을 이용한 버튼 객체생성 
         MainGUI form2 = new MainGUI();//MainGUI로 폼을 만들고
-        public static int i = 1;
+        public static int i = 0;//버튼 추가할 때 쓰일 변수 이름
+
         public PlusWeb()
         {
             InitializeComponent();
@@ -29,19 +30,15 @@ namespace MY_BEST_STARS
         }
         private void Web_Enter_Click(object sender, EventArgs e)//웹 등록 버튼
         {
-            while (true)
-            {
-                btn.Size = new Size(114, 36);//버튼 사이즈
-                btn.Text = textBox1.Text;//이름은 텍스트 박스 1 에서 가져옴
-                btn.Click += new EventHandler(btn_Click);//버튼 클릭 기능추가
-                btn.Location = new Point(374, i*73);//버튼의 위치 ( 가로, 세로 )
-                btn.Visible = true;//btn 있다고 하기
-                form2.Controls.Add(btn);//form2 에 버튼을 추가한다.
-                i += i;
-                this.Visible = false;//창닫고
-                form2.ShowDialog();//그 창을 띄움
-                break;
-            }
+            btn.Size = new Size(114, 36);//버튼 사이즈
+            btn.Text = textBox1.Text;//이름은 텍스트 박스 1 에서 가져옴
+            btn.Click += new EventHandler(btn_Click);//버튼 클릭 기능추가
+            btn.Location = new Point(374, i*73);//버튼의 위치 ( 가로, 세로 )
+            btn.Visible = true;//btn 있다고 하기
+            form2.Controls.Add(btn);//form2 에 버튼을 추가한다.
+            i += i + 1 ;
+            this.Visible = false;//창닫고
+            form2.ShowDialog();//그 창을 띄움
         }
         public void btn_Click(object sender, EventArgs e)
         {
