@@ -46,6 +46,10 @@ namespace MY_BEST_STARS
 
             return a;
         }
+        public void Output()//라벨에 시간을 계속 푸쉬해줄 메소드
+        {
+
+        }
         public void Compare()
         {
 
