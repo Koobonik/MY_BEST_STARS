@@ -31,6 +31,9 @@ namespace MY_BEST_STARS
 
         private void application_Click(object sender, EventArgs e)
         {
+            this.Visible = false;//창닫고
+            application app = new application();//애플리케이션 추가 객체
+            app.ShowDialog();//창 띄우기
 
         }
     }
