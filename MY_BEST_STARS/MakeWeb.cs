@@ -20,9 +20,7 @@ namespace MY_BEST_STARS
                 System.Diagnostics.Process.Start("http://www.coolenjoy.net");//쿨엔조이
                 System.Diagnostics.Process.Start("https://okky.kr");//오키 커뮤니티
             }
-            catch
-                (
-                 System.ComponentModel.Win32Exception noBrowser)
+            catch (System.ComponentModel.Win32Exception noBrowser)
             {
                 if (noBrowser.ErrorCode == -2147467259)
                     MessageBox.Show(noBrowser.Message);//브라우저가 없을때 출력되는 메시지
@@ -40,9 +38,7 @@ namespace MY_BEST_STARS
                 System.Diagnostics.Process.Start("https://mailprogramming.com/");//매일프로그래밍
                 System.Diagnostics.Process.Start("https://aws.amazon.com/ko/");//아마존 웹서비스
             }
-            catch
-                (
-                 System.ComponentModel.Win32Exception noBrowser)
+            catch (System.ComponentModel.Win32Exception noBrowser)
             {
                 if (noBrowser.ErrorCode == -2147467259)
                     MessageBox.Show(noBrowser.Message);//브라우저가 없을때 출력되는 메시지
@@ -60,9 +56,7 @@ namespace MY_BEST_STARS
                 System.Diagnostics.Process.Start("http://mr-s.co.kr/");//미스터스트릿
                 System.Diagnostics.Process.Start("http://www.asclo.com/");//애즈클로
             }
-            catch
-                (
-                 System.ComponentModel.Win32Exception noBrowser)
+            catch (System.ComponentModel.Win32Exception noBrowser)
             {
                 if (noBrowser.ErrorCode == -2147467259)
                     MessageBox.Show(noBrowser.Message);//브라우저가 없을때 출력되는 메시지
@@ -80,9 +74,7 @@ namespace MY_BEST_STARS
                 System.Diagnostics.Process.Start("http://www.3rshop.co.kr/main/main.php");//3R shop
                 System.Diagnostics.Process.Start("http://www.danawa.com/");//다나와
             }
-            catch
-                (
-                 System.ComponentModel.Win32Exception noBrowser)
+            catch (System.ComponentModel.Win32Exception noBrowser)
             {
                 if (noBrowser.ErrorCode == -2147467259)
                     MessageBox.Show(noBrowser.Message);//브라우저가 없을때 출력되는 메시지
@@ -98,9 +90,7 @@ namespace MY_BEST_STARS
             {
                 System.Diagnostics.Process.Start("https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=%EB%82%A0%EC%94%A8");//네이버 날씨
             }
-            catch
-                (
-                 System.ComponentModel.Win32Exception noBrowser)
+            catch (System.ComponentModel.Win32Exception noBrowser)
             {
                 if (noBrowser.ErrorCode == -2147467259)
                     MessageBox.Show(noBrowser.Message);//브라우저가 없을때 출력되는 메시지
@@ -116,9 +106,7 @@ namespace MY_BEST_STARS
             {
                 System.Diagnostics.Process.Start("https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=%EB%AF%B8%EC%84%B8%EB%A8%BC%EC%A7%80");//미세먼지
             }
-            catch
-                (
-                 System.ComponentModel.Win32Exception noBrowser)
+            catch (System.ComponentModel.Win32Exception noBrowser)
             {
                 if (noBrowser.ErrorCode == -2147467259)
                     MessageBox.Show(noBrowser.Message);//브라우저가 없을때 출력되는 메시지
