@@ -30,3 +30,4 @@ C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\ko\Microsoft.D
 C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\ko\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
 C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.csproj.CopyComplete
 C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.application.resources
+C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.Spec_Prcie_Set.resources

@@ -44,6 +44,7 @@ namespace MY_BEST_STARS
             this.Weather = new System.Windows.Forms.Button();
             this.Fine_Dust = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.Spec_Price_Mode = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -174,11 +175,23 @@ namespace MY_BEST_STARS
             this.label3.TabIndex = 12;
             this.label3.Text = "추가 웹";
             // 
+            // Spec_Price_Mode
+            // 
+            this.Spec_Price_Mode.Font = new System.Drawing.Font("Monospace", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Spec_Price_Mode.Location = new System.Drawing.Point(540, 40);
+            this.Spec_Price_Mode.Name = "Spec_Price_Mode";
+            this.Spec_Price_Mode.Size = new System.Drawing.Size(94, 37);
+            this.Spec_Price_Mode.TabIndex = 13;
+            this.Spec_Price_Mode.Text = "특가 모드";
+            this.Spec_Price_Mode.UseVisualStyleBackColor = true;
+            this.Spec_Price_Mode.Click += new System.EventHandler(this.Spec_Price_Mode_Click);
+            // 
             // MainGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(679, 347);
+            this.Controls.Add(this.Spec_Price_Mode);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Fine_Dust);
             this.Controls.Add(this.Weather);
@@ -219,5 +232,6 @@ namespace MY_BEST_STARS
         private System.Windows.Forms.Button Weather;
         private System.Windows.Forms.Button Fine_Dust;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button Spec_Price_Mode;
     }
 }

@@ -59,5 +59,10 @@ namespace MY_BEST_STARS
         {
             web.Find_Dust();
         }
+
+        private void Spec_Price_Mode_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
