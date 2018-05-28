@@ -32,10 +32,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Spec_Price_Url = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.Spec_Price_Time = new System.Windows.Forms.TextBox();
+            this.Hour = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Set = new System.Windows.Forms.Button();
+            this.Close = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Minute = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Second = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -66,55 +71,107 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "특가 시간 :";
             // 
-            // Spec_Price_Time
+            // Hour
             // 
-            this.Spec_Price_Time.Location = new System.Drawing.Point(111, 45);
-            this.Spec_Price_Time.Name = "Spec_Price_Time";
-            this.Spec_Price_Time.Size = new System.Drawing.Size(204, 21);
-            this.Spec_Price_Time.TabIndex = 3;
-            this.Spec_Price_Time.TextChanged += new System.EventHandler(this.Spec_Price_Time_TextChanged);
+            this.Hour.Location = new System.Drawing.Point(111, 45);
+            this.Hour.Name = "Hour";
+            this.Hour.Size = new System.Drawing.Size(40, 21);
+            this.Hour.TabIndex = 3;
+            this.Hour.TextChanged += new System.EventHandler(this.Hour_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Monospace", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(137, 79);
+            this.label3.Location = new System.Drawing.Point(116, 80);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 19);
             this.label3.TabIndex = 4;
             this.label3.Text = "서버 시간";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // button1
+            // Set
             // 
-            this.button1.Font = new System.Drawing.Font("Monospace", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(50, 112);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 31);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "(재)설정";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Set.Font = new System.Drawing.Font("Monospace", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Set.Location = new System.Drawing.Point(50, 112);
+            this.Set.Name = "Set";
+            this.Set.Size = new System.Drawing.Size(101, 31);
+            this.Set.TabIndex = 5;
+            this.Set.Text = "(재)설정";
+            this.Set.UseVisualStyleBackColor = true;
+            this.Set.Click += new System.EventHandler(this.Set_Click);
             // 
-            // button2
+            // Close
             // 
-            this.button2.Font = new System.Drawing.Font("Monospace", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button2.Location = new System.Drawing.Point(186, 112);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 31);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "닫기";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Close.Font = new System.Drawing.Font("Monospace", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Close.Location = new System.Drawing.Point(186, 112);
+            this.Close.Name = "Close";
+            this.Close.Size = new System.Drawing.Size(101, 31);
+            this.Close.TabIndex = 6;
+            this.Close.Text = "닫기";
+            this.Close.UseVisualStyleBackColor = true;
+            this.Close.Click += new System.EventHandler(this.Close_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Monospace", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.Location = new System.Drawing.Point(157, 47);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(24, 19);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "시";
+            // 
+            // Minute
+            // 
+            this.Minute.Location = new System.Drawing.Point(187, 45);
+            this.Minute.Name = "Minute";
+            this.Minute.Size = new System.Drawing.Size(40, 21);
+            this.Minute.TabIndex = 8;
+            this.Minute.TextChanged += new System.EventHandler(this.Minute_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Monospace", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.Location = new System.Drawing.Point(233, 47);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(24, 19);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "분";
+            // 
+            // Second
+            // 
+            this.Second.Location = new System.Drawing.Point(263, 45);
+            this.Second.Name = "Second";
+            this.Second.Size = new System.Drawing.Size(40, 21);
+            this.Second.TabIndex = 10;
+            this.Second.TextChanged += new System.EventHandler(this.Second_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Monospace", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6.Location = new System.Drawing.Point(309, 47);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(24, 19);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "초";
             // 
             // Spec_Prcie_Set
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(339, 155);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.Second);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Minute);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.Close);
+            this.Controls.Add(this.Set);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.Spec_Price_Time);
+            this.Controls.Add(this.Hour);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Spec_Price_Url);
             this.Controls.Add(this.label1);
@@ -131,9 +188,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Spec_Price_Url;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Spec_Price_Time;
+        private System.Windows.Forms.TextBox Hour;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Set;
+        private System.Windows.Forms.Button Close;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox Minute;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox Second;
+        private System.Windows.Forms.Label label6;
     }
 }
