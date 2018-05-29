@@ -8,8 +8,8 @@ namespace MY_BEST_STARS
 {
     class Set_Client_and_Server
     {
-        String Url, Hour, Miniute;//이 객체가 갖게 될 웹 주소 시 분 초 변수
-        String Server_Time, Time;//String 형의 객체 시간을 나타내줄 변수
+        public String Url, Hour, Miniute;//이 객체가 갖게 될 웹 주소 시 분 초 변수
+        public String Server_Time, Time;//String 형의 객체 시간을 나타내줄 변수
         DateTime DT;//이 객체(Set_Client)가 서버로부터 받아온 DateTime 을 저장할 변수
         DateTime dtBefore;//요청 보내기 전 시간
         DateTime dtAfter;//요청 받은 후의 시간
@@ -20,6 +20,7 @@ namespace MY_BEST_STARS
             this.Url = url;
             this.Hour = hour;
             this.Miniute = miniute;
+            this.Time = hour + "시" + miniute + "분";
         }
 
         public Set_Client_and_Server(String url)
@@ -28,10 +29,10 @@ namespace MY_BEST_STARS
         }
         public String Set_Time_is()
         {
-            String Set_Time = Hour + "시 " + Miniute + "분 ";
+            String Set_Time = Hour + "시" + Miniute + "분";
             return "설정시간은 "+ Set_Time + " 입니다.";
         }
-        public String Get_Server_Time()//서버와 시간 동기화
+        public String Get_Server_Time()//서버시간 가져오기
         {
             
             //웹에 요청 보내기
@@ -85,22 +86,17 @@ namespace MY_BEST_STARS
         }
         public void Compare()//서버시간이 설정한 시간과 같으면 웹 실행
         {
-            Time = this.Hour+"시" + this.Miniute+"분" ;
-            Server_Time = Get_Server_Time();
             bool con = true;
             while (con)
             {
-                if (Time.Equals(Get_Server_Time()))
+                if (this.Time.Equals(Get_Server_Time()))
                 {
-                    
                     System.Diagnostics.Process.Start(Url);//사용자가 설정했던 url을 연다.
                     con = false;
                 }
                 else
                 {
-
-                    //Delay(100);//0.1초 기다려라!
-                    Server_Time=Get_Server_Time();
+                    Delay(100);//0.1초 기다려라!
                 }
             }
         }

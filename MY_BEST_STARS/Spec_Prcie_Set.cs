@@ -17,7 +17,7 @@ namespace MY_BEST_STARS
             InitializeComponent();
         }
 
-        private void Spec_Price_Url_TextChanged(object sender, EventArgs e)
+        private void Spec_Price_Url_TextChanged(object sender, EventArgs e)//url 텍스트 박스
         {
 
         }
@@ -40,15 +40,25 @@ namespace MY_BEST_STARS
         private void Set_Click(object sender, EventArgs e)//  (재)설정 버튼
         {
             Set_Client_and_Server scs = new Set_Client_and_Server(Spec_Price_Url.Text, Hour.Text, Minute.Text);//url과 시 분 초 받기
-            while (true)
-                label3.Text = scs.Output();
-
-            //scs.Compare();
+            bool a = true;
+            while (a)
+            {
+                if(scs.Get_Server_Time().Equals(scs.Time))
+                {
+                    System.Diagnostics.Process.Start(scs.Url);//사용자가 설정했던 url을 연다.
+                    label3.Text = scs.Output();
+                    a = false;
+                }
+                else if(a)
+                {
+                    label3.Text = scs.Output();
+                }
+            }
 
         }
         private void Close_Click(object sender, EventArgs e)//종료 버튼
         {
-
+            this.Visible = false;//창종료
         }
 
     }
