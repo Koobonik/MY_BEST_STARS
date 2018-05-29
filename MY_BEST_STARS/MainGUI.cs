@@ -17,6 +17,7 @@ namespace MY_BEST_STARS
         {
             InitializeComponent();
         }
+
         private void edit_Click(object sender, EventArgs e)//편집 버튼
         {
             this.Visible = false;//창닫고
@@ -28,6 +29,13 @@ namespace MY_BEST_STARS
         {
             Visible = false;
             Application.Exit();
+        }
+
+        private void Spec_Price_Mode_Click(object sender, EventArgs e)//특가모드 버튼
+        {
+            Spec_Prcie_Set sps = new Spec_Prcie_Set();
+            sps.ShowDialog();
+
         }
 
         private void openweb_Click(object sender, EventArgs e)//웹서핑 모드
@@ -60,9 +68,6 @@ namespace MY_BEST_STARS
             web.Find_Dust();
         }
 
-        private void Spec_Price_Mode_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

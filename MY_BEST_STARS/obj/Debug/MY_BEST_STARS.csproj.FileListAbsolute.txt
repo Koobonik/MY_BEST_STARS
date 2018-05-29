@@ -23,11 +23,5 @@ C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.
 C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.exe
 C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.pdb
 C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.csprojAssemblyReference.cache
-C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
-C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
-C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\ko\Microsoft.Data.Tools.Schema.Sql.UnitTesting.resources.dll
-C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\ko\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
-C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.csproj.CopyComplete
 C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.application.resources
 C:\Users\kbi96\source\repos\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.Spec_Prcie_Set.resources

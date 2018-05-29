@@ -82,12 +82,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Monospace", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(116, 80);
+            this.label3.Font = new System.Drawing.Font("Monospace", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(10, 75);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 19);
+            this.label3.Size = new System.Drawing.Size(95, 25);
             this.label3.TabIndex = 4;
-            this.label3.Text = "서버 시간";
+            this.label3.Text = "설정 시간";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Set
