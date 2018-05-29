@@ -39,8 +39,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Minute = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.Second = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -75,7 +73,7 @@
             // 
             this.Hour.Location = new System.Drawing.Point(111, 45);
             this.Hour.Name = "Hour";
-            this.Hour.Size = new System.Drawing.Size(40, 21);
+            this.Hour.Size = new System.Drawing.Size(55, 21);
             this.Hour.TabIndex = 3;
             this.Hour.TextChanged += new System.EventHandler(this.Hour_TextChanged);
             // 
@@ -116,7 +114,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Monospace", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(157, 47);
+            this.label4.Location = new System.Drawing.Point(172, 47);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(24, 19);
             this.label4.TabIndex = 7;
@@ -124,9 +122,9 @@
             // 
             // Minute
             // 
-            this.Minute.Location = new System.Drawing.Point(187, 45);
+            this.Minute.Location = new System.Drawing.Point(202, 45);
             this.Minute.Name = "Minute";
-            this.Minute.Size = new System.Drawing.Size(40, 21);
+            this.Minute.Size = new System.Drawing.Size(55, 21);
             this.Minute.TabIndex = 8;
             this.Minute.TextChanged += new System.EventHandler(this.Minute_TextChanged);
             // 
@@ -134,37 +132,17 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Monospace", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(233, 47);
+            this.label5.Location = new System.Drawing.Point(263, 47);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(24, 19);
             this.label5.TabIndex = 9;
             this.label5.Text = "분";
-            // 
-            // Second
-            // 
-            this.Second.Location = new System.Drawing.Point(263, 45);
-            this.Second.Name = "Second";
-            this.Second.Size = new System.Drawing.Size(40, 21);
-            this.Second.TabIndex = 10;
-            this.Second.TextChanged += new System.EventHandler(this.Second_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Monospace", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6.Location = new System.Drawing.Point(309, 47);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(24, 19);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "초";
             // 
             // Spec_Prcie_Set
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(339, 155);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.Second);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Minute);
             this.Controls.Add(this.label4);
@@ -195,7 +173,5 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Minute;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox Second;
-        private System.Windows.Forms.Label label6;
     }
 }
