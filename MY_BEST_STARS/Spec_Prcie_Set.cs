@@ -43,15 +43,14 @@ namespace MY_BEST_STARS
             bool a = true;
             while (a)
             {
-                if(scs.Get_Server_Time().Equals(scs.Time))
+                if(scs.Get_Server_Time().Equals(scs.Time))//서버의 시간과 내가 설정한 시간이 같다면
                 {
                     System.Diagnostics.Process.Start(scs.Url);//사용자가 설정했던 url을 연다.
-                    label3.Text = scs.Output();
                     a = false;
                 }
                 else if(a)
                 {
-                    label3.Text = scs.Output();
+                    label3.Text = scs.Output();//라벨에 지속적으로 서버 시간 갱신
                 }
             }
 
