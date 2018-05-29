@@ -65,12 +65,13 @@ namespace MY_BEST_STARS
             Time = Hour+"시 " + Miniute+"분 " + Second + "초";
             Console.WriteLine(Time);
             Console.WriteLine(Get_Server_Time());
-            while (true)
+            bool con = true;
+            while (con)
             {
                 if (Time == Get_Server_Time())
                 {
                     System.Diagnostics.Process.Start(Url);//사용자가 설정했던 url을 연다.
-                    break;
+                    con = false;
                 }
                 else
                 {
