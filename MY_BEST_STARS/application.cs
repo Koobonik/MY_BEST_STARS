@@ -21,7 +21,17 @@ namespace MY_BEST_STARS
 
         private void cal_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("C:\\Windows\\System32\\cale.exe");
+            Process.Start("calc.exe");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Process.Start("notepad.exe");
+        }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
         }
     }
 }

@@ -30,11 +30,12 @@
         {
             this.PlusWebButton = new System.Windows.Forms.Button();
             this.application = new System.Windows.Forms.Button();
+            this.close = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PlusWebButton
             // 
-            this.PlusWebButton.Location = new System.Drawing.Point(12, 12);
+            this.PlusWebButton.Location = new System.Drawing.Point(109, 12);
             this.PlusWebButton.Name = "PlusWebButton";
             this.PlusWebButton.Size = new System.Drawing.Size(75, 23);
             this.PlusWebButton.TabIndex = 0;
@@ -44,7 +45,7 @@
             // 
             // application
             // 
-            this.application.Location = new System.Drawing.Point(93, 12);
+            this.application.Location = new System.Drawing.Point(12, 12);
             this.application.Name = "application";
             this.application.Size = new System.Drawing.Size(91, 23);
             this.application.TabIndex = 2;
@@ -52,11 +53,22 @@
             this.application.UseVisualStyleBackColor = true;
             this.application.Click += new System.EventHandler(this.application_Click);
             // 
+            // close
+            // 
+            this.close.Location = new System.Drawing.Point(57, 44);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(75, 23);
+            this.close.TabIndex = 3;
+            this.close.Text = "닫기";
+            this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
             // editGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(196, 43);
+            this.ClientSize = new System.Drawing.Size(193, 79);
+            this.Controls.Add(this.close);
             this.Controls.Add(this.application);
             this.Controls.Add(this.PlusWebButton);
             this.Name = "editGUI";
@@ -69,5 +81,6 @@
 
         private System.Windows.Forms.Button PlusWebButton;
         private System.Windows.Forms.Button application;
+        private System.Windows.Forms.Button close;
     }
 }
