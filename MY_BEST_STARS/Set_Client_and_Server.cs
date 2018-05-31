@@ -25,7 +25,7 @@ namespace MY_BEST_STARS
 
         public Set_Client_and_Server(String url)
         {
-
+            this.Url = url;
         }
         public String Set_Time_is()
         {
