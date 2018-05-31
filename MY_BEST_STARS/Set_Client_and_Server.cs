@@ -96,7 +96,7 @@ namespace MY_BEST_STARS
                 }
                 else
                 {
-                    Delay(100);//0.1초 기다려라!
+                    Delay(500);//0.5초 기다려라!
                 }
             }
         }
