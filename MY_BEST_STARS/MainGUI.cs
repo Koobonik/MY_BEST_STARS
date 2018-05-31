@@ -20,7 +20,6 @@ namespace MY_BEST_STARS
 
         private void edit_Click(object sender, EventArgs e)//편집 버튼
         {
-            this.Visible = false;//창닫고
             editGUI editgui = new editGUI();//나만의 만능찾기라는 창을 만듦
             editgui.ShowDialog();//그 창을 띄움
         }

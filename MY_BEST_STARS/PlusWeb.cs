@@ -60,7 +60,7 @@ namespace MY_BEST_STARS
             }
         }
 
-        private void Cancel_Click(object sender, EventArgs e)
+        private void Cancel_Click(object sender, EventArgs e)//취소버튼
         {
             this.Visible = false;//창닫고
         }
