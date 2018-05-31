@@ -10,11 +10,12 @@ namespace MY_BEST_STARS
     {
         public String Url, Hour, Miniute;//이 객체가 갖게 될 웹 주소 시 분 초 변수
         public String Server_Time, Time;//String 형의 객체 시간을 나타내줄 변수
-        DateTime DT;//이 객체(Set_Client)가 서버로부터 받아온 DateTime 을 저장할 변수
-        DateTime dtBefore;//요청 보내기 전 시간
-        DateTime dtAfter;//요청 받은 후의 시간
-        DateTime dtNosp;//보내기 전 시간과 요청 받은 후의 시간의 오차를 대입받을 변수
-        String Until_M, Until_S;//분까지 나오게할지 초까지 나오게 할지
+        DateTime DT;                    //이 객체(Set_Client)가 서버로부터 받아온 DateTime 을 저장할 변수
+        DateTime dtBefore;              //요청 보내기 전 시간
+        DateTime dtAfter;               //요청 받은 후의 시간
+        DateTime dtNosp;                //보내기 전 시간과 요청 받은 후의 시간의 오차를 대입받을 변수
+        String Until_M, Until_S;        //분까지 나오게할지 초까지 나오게 할지
+
         public Set_Client_and_Server(String url, String hour, String miniute)//문자열과 시간을 받아와 만드는 생성자
         {
             this.Url = url;
