@@ -77,7 +77,7 @@ namespace MY_BEST_STARS
             //요청에 걸린 시간 계산하여 서버 시간 보정. 하지만 오차가 거의 1초임 ㅠㅠ 추후 패치 필요
             dtNosp = dtNosp.AddTicks(dtAfter.Ticks - dtBefore.Ticks);
 
-            Until_S = dtNosp.ToString("현재 서버 시간은 "+"HH시mm분ss초");
+            Until_S = dtNosp.ToString("현재 서버 시간은 : HH시 mm분 ss초");
             return Until_S;
         }
         public String Output()//라벨에 시간을 계속 푸쉬해줄 메소드

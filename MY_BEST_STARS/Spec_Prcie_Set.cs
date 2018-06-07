@@ -34,6 +34,8 @@ namespace MY_BEST_STARS
 
         public void label3_Click(object sender, EventArgs e)//시간을 표시해주는 곳
         {
+            Timer t = new Timer();
+            t.Start();
             Set_Client_and_Server Servertime = new Set_Client_and_Server(Spec_Price_Url.Text);
             
         }
@@ -53,7 +55,7 @@ namespace MY_BEST_STARS
                     if (scs.Get_Server_Time().Equals(scs.Time))//서버의 시간과 내가 설정한 시간이 같다면
                     {
                         System.Diagnostics.Process.Start(scs.Url);//사용자가 설정했던 url을 연다.
-                        a = false;
+                        a = false; 
                     }
                     else if (a)
                     {
@@ -71,7 +73,10 @@ namespace MY_BEST_STARS
 
         private void timer1_Tick(object sender, EventArgs e) // 타이머
         {
-            label3.Text = DateTime.Now.ToLongTimeString();
+            DateTime dt = DateTime.Now;
+            dt = dt.AddTicks(dt.Ticks);
+            String dts = dt.ToString("현재 서버 시간 : HH시 mm분 ss초");
+            label3.Text = dts;
             
         }
     }
