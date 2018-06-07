@@ -69,5 +69,10 @@ namespace MY_BEST_STARS
             this.Visible = false;//창종료
         }
 
+        private void timer1_Tick(object sender, EventArgs e) // 타이머
+        {
+            label3.Text = DateTime.Now.ToLongTimeString();
+            
+        }
     }
 }

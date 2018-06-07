@@ -113,5 +113,10 @@ namespace MY_BEST_STARS
             }
             return DateTime.Now;
         }
+
+        public void Auto_time()
+        {
+            //DateTime auto = UntilS();
+        }
     }
 }
