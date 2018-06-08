@@ -34,10 +34,17 @@ namespace MY_BEST_STARS
 
         public void label3_Click(object sender, EventArgs e)//시간을 표시해주는 곳
         {
-            Timer t = new Timer();
-            t.Start();
-            Set_Client_and_Server Servertime = new Set_Client_and_Server(Spec_Price_Url.Text);
-            
+
+            Set_Client_and_Server scs = new Set_Client_and_Server();
+            DateTime dt = scs.UntilS2();
+            String dts;
+            //dt = dt.AddTicks(dt.Ticks);
+            while (true)
+            {
+                dts = dt.ToString("현재 서버 시간 : HH시 mm분 ss초");
+                label3.Text = dts;
+                scs.Delay(1000);
+            }
         }
         private void Set_Click(object sender, EventArgs e)//  (재)설정 버튼
         {
@@ -59,7 +66,7 @@ namespace MY_BEST_STARS
                     }
                     else if (a)
                     {
-                        label3.Text = scs.Output();//라벨에 지속적으로 서버 시간 갱신
+                        //label3.Text = scs.Output();//라벨에 지속적으로 서버 시간 갱신
                     }
                 }
             }
@@ -71,13 +78,6 @@ namespace MY_BEST_STARS
             this.Visible = false;//창종료
         }
 
-        private void timer1_Tick(object sender, EventArgs e) // 타이머
-        {
-            DateTime dt = DateTime.Now;
-            dt = dt.AddTicks(dt.Ticks);
-            String dts = dt.ToString("현재 서버 시간 : HH시 mm분 ss초");
-            label3.Text = dts;
-            
-        }
+        
     }
 }

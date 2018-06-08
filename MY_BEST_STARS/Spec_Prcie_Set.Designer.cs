@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Spec_Prcie_Set));
             this.label1 = new System.Windows.Forms.Label();
             this.Spec_Price_Url = new System.Windows.Forms.TextBox();
@@ -40,7 +39,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Minute = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -140,12 +138,6 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "분";
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // Spec_Prcie_Set
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -181,6 +173,5 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Minute;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Timer timer1;
     }
 }

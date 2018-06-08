@@ -16,6 +16,10 @@ namespace MY_BEST_STARS
         DateTime dtNosp;                //보내기 전 시간과 요청 받은 후의 시간의 오차를 대입받을 변수
         String Until_M, Until_S;        //분까지 나오게할지 초까지 나오게 할지
 
+        public Set_Client_and_Server()//null이 들어올경우 기본값은 네이버 시간을 받아온다.
+        {
+            this.Url = "https://www.naver.com";
+        }
         public Set_Client_and_Server(String url, String hour, String miniute)//문자열과 시간을 받아와 만드는 생성자
         {
             this.Url = url;
@@ -57,7 +61,7 @@ namespace MY_BEST_STARS
 
             return Until_M;
         }
-        public String UntilS()
+        public String UntilS()//시 분 초 까지 출력
         {
             //웹에 요청 보내기
             System.Net.HttpWebRequest wReqFirst = (System.Net.HttpWebRequest)System.Net.WebRequest.Create(Url);
@@ -80,6 +84,29 @@ namespace MY_BEST_STARS
             Until_S = dtNosp.ToString("현재 서버 시간은 : HH시 mm분 ss초");
             return Until_S;
         }
+        public DateTime UntilS2() // return 값 변경 
+        {
+            //웹에 요청 보내기
+            System.Net.HttpWebRequest wReqFirst = (System.Net.HttpWebRequest)System.Net.WebRequest.Create(Url);
+
+            //요청 보내기 전 시간
+            dtBefore = DateTime.Now;
+
+            //보낸 요청 답장 받기
+            System.Net.HttpWebResponse wRespFirst = (System.Net.HttpWebResponse)wReqFirst.GetResponse();
+
+            //요청 받은 후의 시간
+            dtAfter = DateTime.Now;
+
+            //알맞게 변환하기
+            DateTime dtNosp = Convert.ToDateTime(wRespFirst.Headers["Date"].ToString());
+
+            //요청에 걸린 시간 계산하여 서버 시간 보정. 하지만 오차가 거의 1초임 ㅠㅠ 추후 패치 필요
+            dtNosp = dtNosp.AddTicks(dtAfter.Ticks - dtBefore.Ticks);
+
+            Until_S = dtNosp.ToString("현재 서버 시간은 : HH시 mm분 ss초");
+            return dtNosp;
+        }
         public String Output()//라벨에 시간을 계속 푸쉬해줄 메소드
         {
             Delay(1000);
@@ -101,7 +128,7 @@ namespace MY_BEST_STARS
                 }
             }
         }
-        static DateTime Delay(int ms)//기다리게 만드는 함수
+        public DateTime Delay(int ms)//기다리게 만드는 함수
         {
             DateTime thisMoment = DateTime.Now;
             TimeSpan duration = new TimeSpan(0, 0, 0, 0, ms);
