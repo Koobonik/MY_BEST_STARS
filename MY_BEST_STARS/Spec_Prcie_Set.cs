@@ -36,15 +36,18 @@ namespace MY_BEST_STARS
         {
 
             Set_Client_and_Server scs = new Set_Client_and_Server();
+            /*
             DateTime dt = scs.UntilS2();
             String dts;
-            //dt = dt.AddTicks(dt.Ticks);
-            while (true)
+            dt = dt.AddTicks(dt.Ticks);
+            bool b = true;
+            while (b)
             {
                 dts = dt.ToString("현재 서버 시간 : HH시 mm분 ss초");
                 label3.Text = dts;
-                scs.Delay(1000);
+                scs.Delay(100);
             }
+            */
         }
         private void Set_Click(object sender, EventArgs e)//  (재)설정 버튼
         {
@@ -66,7 +69,7 @@ namespace MY_BEST_STARS
                     }
                     else if (a)
                     {
-                        //label3.Text = scs.Output();//라벨에 지속적으로 서버 시간 갱신
+                        label3.Text = scs.Output();//라벨에 지속적으로 서버 시간 갱신
                     }
                 }
             }
