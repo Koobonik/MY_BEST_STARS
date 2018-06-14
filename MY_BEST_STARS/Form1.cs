@@ -18,8 +18,6 @@ namespace MY_BEST_STARS
             this.Visible = false;//창닫고
             MainGUI form2 = new MainGUI();//나만의 만능찾기라는 창을 만듦
             form2.ShowDialog();//그 창을 띄움
-            Browser browser = new Browser();
-            browser.ShowDialog();
         }
 
         public void register_Click(object sender, EventArgs e)//등록버튼

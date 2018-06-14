@@ -14,8 +14,8 @@ namespace MY_BEST_STARS
     {
         public void Web_surfing_Mode()//웹서핑 모드
         {
-            Browser browser = new Browser();
-            browser.ShowDialog();
+            //Browser browser = new Browser();
+            //browser.ShowDialog();
             try
             {
                 System.Diagnostics.Process.Start("https://www.naver.com");//네이버
