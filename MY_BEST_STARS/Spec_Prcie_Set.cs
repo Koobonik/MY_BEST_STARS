@@ -19,12 +19,12 @@ namespace MY_BEST_STARS
 
         private void Spec_Price_Url_TextChanged(object sender, EventArgs e)//url 텍스트 박스
         {
-
+            
         }
         
         private void Hour_TextChanged(object sender, EventArgs e)//시간 텍스트 박스
         {
-
+            
         }
 
         private void Minute_TextChanged(object sender, EventArgs e)//분 텍스트 박스
@@ -35,7 +35,7 @@ namespace MY_BEST_STARS
         public void label3_Click(object sender, EventArgs e)//시간을 표시해주는 곳
         {
 
-            //Set_Client_and_Server scs = new Set_Client_and_Server();
+            Set_Client_and_Server scs = new Set_Client_and_Server();
             /*
             DateTime dt = scs.UntilS2();
             String dts;
@@ -51,6 +51,32 @@ namespace MY_BEST_STARS
         }
         private void Set_Click(object sender, EventArgs e)//  (재)설정 버튼
         {
+            /* 시간에 대한 예외처리 하는 부분 */
+
+            // Hour 부분이 들어올 때
+            DateTime dth = DateTime.Now;
+            //dt.ToString("HH시mm분");
+            int H_now_time = int.Parse(dth.ToString("HH")); // 현재 시간
+            int H_box_time = int.Parse(Hour.Text); // 박스에 입력될 시간
+            if (H_now_time > H_box_time)
+            {
+                Hour.Text = null;
+                MessageBox.Show("지금 이후의 시간을 입력해주세요");
+            }
+
+            // Miniute 부분이 들어올 때
+            DateTime dtm = DateTime.Now;
+            //dt.ToString("HH시mm분");
+            int M_now_time = int.Parse(dtm.ToString("mm")); // 현재 분
+            int M_box_time = int.Parse(Minute.Text); // 박스에 입력될 분
+            if (M_now_time > M_box_time)
+            {
+                Minute.Text = null;
+                MessageBox.Show("지금 이후의 시간을 입력해주세요");
+            }
+
+
+            /*  예외처리 이후 실행될 부분    */
             if (Hour.Text == null && Minute.Text == null)//시간 부분에 null 값이 들어온다면
             {
                 Set_Client_and_Server scs = new Set_Client_and_Server(Spec_Price_Url.Text);
