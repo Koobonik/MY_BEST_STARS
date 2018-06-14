@@ -35,7 +35,7 @@ namespace MY_BEST_STARS
         public void label3_Click(object sender, EventArgs e)//시간을 표시해주는 곳
         {
 
-            Set_Client_and_Server scs = new Set_Client_and_Server();
+            //Set_Client_and_Server scs = new Set_Client_and_Server();
             /*
             DateTime dt = scs.UntilS2();
             String dts;
