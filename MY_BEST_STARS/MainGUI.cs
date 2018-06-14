@@ -41,9 +41,9 @@ namespace MY_BEST_STARS
         private void openweb_Click(object sender, EventArgs e)//웹서핑 모드
         {
             //web.Web_surfing_Mode();
-            new Browser(Browser.naver).Visible = true;
-            new Browser(Browser.okky).Visible = true;
-            new Browser(Browser.coolenjoy).Visible = true;
+            new Browser(Browser.naver).Visible = true; // 네이버
+            new Browser(Browser.okky).Visible = true; // 오키
+            new Browser(Browser.coolenjoy).Visible = true; // 쿨엔조이
 
 
         }
@@ -51,9 +51,9 @@ namespace MY_BEST_STARS
         private void Develop_Mode_Click(object sender, EventArgs e)//개발자 모드
         {
             //web.Develop_Mode();
-            new Browser(Browser.github).Visible = true;
-            new Browser(Browser.mailp).Visible = true;
-            new Browser(Browser.amazon).Visible = true;
+            new Browser(Browser.github).Visible = true; // 깃허브
+            new Browser(Browser.mailp).Visible = true; // 매일 프로그래밍
+            new Browser(Browser.amazon).Visible = true; // 아마존 웹 서비스
         }
 
         private void Clothes_Shopping_Click(object sender, EventArgs e)//옷쇼핑
@@ -67,9 +67,9 @@ namespace MY_BEST_STARS
         private void Computer_Part_Click(object sender, EventArgs e)//컴퓨터 부품
         {
             //web.Computer_Part();
-            new Browser(Browser.happy).Visible = true;
-            new Browser(Browser.threeR).Visible = true;
-            new Browser(Browser.danawa).Visible = true;
+            new Browser(Browser.happy).Visible = true; // 행복 쇼핑
+            new Browser(Browser.threeR).Visible = true; // 3R
+            new Browser(Browser.danawa).Visible = true; // 다나와
         }
 
         private void Weather_Click(object sender, EventArgs e)//날씨 버튼
