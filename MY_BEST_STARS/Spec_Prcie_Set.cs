@@ -73,12 +73,12 @@ namespace MY_BEST_STARS
                     }
                 }
             }
-            this.Visible = false;//다 완료 하면 창 닫기
+            this.Visible = false; //다 완료 하면 창 닫기
 
         }
         private void Close_Click(object sender, EventArgs e)//종료 버튼
         {
-            this.Visible = false;//창종료
+            this.Visible = false; //창종료
         }
 
         

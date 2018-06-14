@@ -61,6 +61,12 @@
     <Compile Include="application.Designer.cs">
       <DependentUpon>application.cs</DependentUpon>
     </Compile>
+    <Compile Include="Browser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browser.Designer.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
     <Compile Include="buttonmake.cs" />
     <Compile Include="editGUI.cs">
       <SubType>Form</SubType>
@@ -99,6 +105,9 @@
     <Compile Include="User.cs" />
     <EmbeddedResource Include="application.resx">
       <DependentUpon>application.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browser.resx">
+      <DependentUpon>Browser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="editGUI.resx">
       <DependentUpon>editGUI.cs</DependentUpon>

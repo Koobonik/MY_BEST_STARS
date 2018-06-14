@@ -13,6 +13,7 @@ namespace MY_BEST_STARS
     public partial class MainGUI : Form//메인 화면
     {
         MakeWeb web = new MakeWeb();//MakeWeb 이라는 클래스 이용해서 웹 기능 만들기
+        Browser broswer = new Browser();
         public MainGUI()
         {
             InitializeComponent();
@@ -40,6 +41,7 @@ namespace MY_BEST_STARS
         private void openweb_Click(object sender, EventArgs e)//웹서핑 모드
         {
             web.Web_surfing_Mode();
+            broswer.toolStripButton5_Click();
         }
 
         private void Develop_Mode_Click(object sender, EventArgs e)//개발자 모드

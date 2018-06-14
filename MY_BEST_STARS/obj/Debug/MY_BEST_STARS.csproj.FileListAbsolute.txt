@@ -29,3 +29,4 @@ C:\Users\diat\documents\visual studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\
 C:\Users\diat\documents\visual studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\bin\Debug\ko\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
 C:\Users\diat\documents\visual studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.application.resources
 C:\Users\diat\documents\visual studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.Spec_Prcie_Set.resources
+C:\Users\diat\Documents\Visual Studio 2015\Projects\MY_BEST_STARS\MY_BEST_STARS\obj\Debug\MY_BEST_STARS.Browser.resources
