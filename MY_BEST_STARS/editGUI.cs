@@ -32,13 +32,11 @@ namespace MY_BEST_STARS
         {
             application app = new application();//애플리케이션 추가 객체
             app.ShowDialog();//창 띄우기
-
         }
 
         private void close_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            
         }
     }
 }

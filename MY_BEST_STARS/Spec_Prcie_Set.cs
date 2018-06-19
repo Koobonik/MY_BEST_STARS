@@ -49,7 +49,7 @@ namespace MY_BEST_STARS
             }
             */
         }
-        private void Set_Click(object sender, EventArgs e)//  (재)설정 버튼
+        private void Set_Click(object sender, EventArgs e) // (재)설정 버튼
         {
             /* 시간에 대한 예외처리 하는 부분 */
 

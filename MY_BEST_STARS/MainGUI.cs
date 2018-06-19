@@ -35,7 +35,6 @@ namespace MY_BEST_STARS
         {
             Spec_Prcie_Set sps = new Spec_Prcie_Set();
             sps.ShowDialog();
-
         }
 
         private void openweb_Click(object sender, EventArgs e)//웹서핑 모드
@@ -44,8 +43,6 @@ namespace MY_BEST_STARS
             new Browser(Browser.naver).Visible = true; // 네이버
             new Browser(Browser.okky).Visible = true; // 오키
             new Browser(Browser.coolenjoy).Visible = true; // 쿨엔조이
-
-
         }
 
         private void Develop_Mode_Click(object sender, EventArgs e)//개발자 모드
@@ -83,7 +80,5 @@ namespace MY_BEST_STARS
             //web.Find_Dust();
             new Browser(Browser.dust).Visible = true;
         }
-
-        
     }
 }

@@ -32,6 +32,7 @@ namespace MY_BEST_STARS
                 MessageBox.Show(other.Message);
             }
         }
+
         public void Develop_Mode()//개발 모드
         {
             try
@@ -50,6 +51,7 @@ namespace MY_BEST_STARS
                 MessageBox.Show(other.Message);
             }
         }
+
         public void Clothes_Shopping()//옷쇼핑
         {
             try
@@ -68,6 +70,7 @@ namespace MY_BEST_STARS
                 MessageBox.Show(other.Message);
             }
         }
+
         public void Computer_Part()//컴퓨터 부품
         {
             try
@@ -86,6 +89,7 @@ namespace MY_BEST_STARS
                 MessageBox.Show(other.Message);
             }
         }
+
         public void Weather()//네이버 날씨
         {
             try
@@ -102,6 +106,7 @@ namespace MY_BEST_STARS
                 MessageBox.Show(other.Message);
             }
         }
+
         public void Find_Dust()//미세먼지
         {
             try
